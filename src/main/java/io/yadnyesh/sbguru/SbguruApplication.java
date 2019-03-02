@@ -1,13 +1,20 @@
 package io.yadnyesh.sbguru;
 
+import io.yadnyesh.sbguru.controller.MyController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class SbguruApplication {
 	
 	public static void main(String[] args) {
-		SpringApplication.run(SbguruApplication.class, args);
+		ApplicationContext applicationContext = SpringApplication.run(SbguruApplication.class, args);
+		
+		MyController myController = (MyController) applicationContext.getBean("myController");
+		
+		myController.printMessageOnCommandLine();
+		
 	}
 	
 }
