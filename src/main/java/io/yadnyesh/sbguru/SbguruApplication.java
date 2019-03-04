@@ -12,6 +12,7 @@ public class SbguruApplication {
 		ApplicationContext applicationContext = SpringApplication.run(SbguruApplication.class, args);
 		MyController myController = (MyController) applicationContext.getBean("myController");
 		myController.printMessageOnCommandLine();
+		
 	}
 	
 }

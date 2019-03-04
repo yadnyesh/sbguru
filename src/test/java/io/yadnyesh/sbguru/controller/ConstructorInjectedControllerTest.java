@@ -17,4 +17,5 @@ public class ConstructorInjectedControllerTest {
 	public void testGreeting() {
 		Assert.assertEquals(GreetingServiceImpl.HELLO_GURUS, constructorInjectedController.sayHello());
 	}
+	
 }
