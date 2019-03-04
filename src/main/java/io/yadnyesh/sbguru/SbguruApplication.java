@@ -10,11 +10,8 @@ public class SbguruApplication {
 	
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = SpringApplication.run(SbguruApplication.class, args);
-		
 		MyController myController = (MyController) applicationContext.getBean("myController");
-		
 		myController.printMessageOnCommandLine();
-		
 	}
 	
 }

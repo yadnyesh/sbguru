@@ -8,4 +8,5 @@ public class MyController {
 	public void printMessageOnCommandLine() {
 		System.out.println("Hello World");
 	}
+	
 }
