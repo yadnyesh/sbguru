@@ -1,3 +1,6 @@
+pet-clinic-data/target/
+pet-clinic-web/target/
+
 HELP.md
 /target/
 !.mvn/wrapper/maven-wrapper.jar
